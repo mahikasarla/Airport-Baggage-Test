@@ -1,4 +1,4 @@
-package com.mahi.interview.baggagerouting;
+package com.mahi.interview.baggagerouting.model;
 
 public class Vertex {
 	final private String id;

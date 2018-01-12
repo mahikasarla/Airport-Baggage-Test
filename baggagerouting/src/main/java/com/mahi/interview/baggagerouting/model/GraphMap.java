@@ -1,12 +1,12 @@
-package com.mahi.interview.baggagerouting;
+package com.mahi.interview.baggagerouting.model;
 
 import java.util.List;
 
 public class GraphMap {
 	private final List<Vertex> vertexes;
-	private final List<Edge> edges;
+	private final List<RouteEdge> edges;
 
-	public GraphMap(List<Vertex> vertexes, List<Edge> edges) {
+	public GraphMap(List<Vertex> vertexes, List<RouteEdge> edges) {
 		this.vertexes = vertexes;
 		this.edges = edges;
 	}
@@ -15,7 +15,7 @@ public class GraphMap {
 		return vertexes;
 	}
 
-	public List<Edge> getEdges() {
+	public List<RouteEdge> getEdges() {
 		return edges;
 	}
 

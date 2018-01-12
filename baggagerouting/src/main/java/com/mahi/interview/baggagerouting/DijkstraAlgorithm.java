@@ -1,32 +1,23 @@
 package com.mahi.interview.baggagerouting;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-
-import com.mahi.interview.baggagerouting.model.Edge;
-import com.mahi.interview.baggagerouting.model.Graph;
+import com.mahi.interview.baggagerouting.model.GraphMap;
+import com.mahi.interview.baggagerouting.model.RouteEdge;
 import com.mahi.interview.baggagerouting.model.Vertex;
 
 
 public class DijkstraAlgorithm {
 
 	private final List<Vertex> nodes;
-	private final List<Edge> edges;
+	private final List<RouteEdge> edges;
 	private Set<Vertex> settledNodes;
 	private Set<Vertex> unSettledNodes;
 	private Map<Vertex, Vertex> predecessors;
 	private Map<Vertex, Integer> distance;
 
-	public DijkstraAlgorithm(Graph graph) {
+	public DijkstraAlgorithm(GraphMap graph) {
 
 		this.nodes = new ArrayList<Vertex>(graph.getVertexes());
-		this.edges = new ArrayList<Edge>(graph.getEdges());
+		this.edges = new ArrayList<RouteEdge>(graph.getEdges());
 	}
 
 	public void execute(Vertex source) {
@@ -59,27 +50,22 @@ public class DijkstraAlgorithm {
 	}
 
 	private int getDistance(Vertex node, Vertex target) {
-		for (Edge edge : edges) {
+		for (RouteEdge edge : edges) {
 			if (edge.getSource().equals(node)
 					&& edge.getDestination().equals(target)) {
 				return edge.getbaggageweight();
 			}
 		}
-		throw new DistanceException("There is no end here");
+		throw new DijkstraGraphMapException("There is no end here");
 	}
 
 	private List<Vertex> getNeighbors(Vertex node) {
 		List<Vertex> neighbors = new ArrayList<Vertex>();
-		for (Edge edge : edges) {
+		for (RouteEdge edge : edges) {
 			if (edge.getSource().equals(node)
 					&& !isSettled(edge.getDestination())) {
 				neighbors.add(edge.getDestination());
 			}
-			
-		/*	if (edge.getDestination().equals(node)
-					&& !isSettled(edge.getSource())) {
-				neighbors.add(edge.getSource());
-			}*/
 		}
 		return neighbors;
 	}
@@ -111,10 +97,7 @@ public class DijkstraAlgorithm {
 		}
 	}
 
-	/*
-	 * This method returns the path from the source to the selected target and
-	 * NULL if no path exists
-	 */
+
 	public Map<Integer,LinkedList<Vertex>> getPath(Vertex target) {
 		LinkedList<Vertex> path = new LinkedList<Vertex>();
 		Vertex step = target;

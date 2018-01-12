@@ -5,8 +5,6 @@ import com.mahi.interview.baggagerouting.model.RouteEdge;
 import com.mahi.interview.baggagerouting.model.Vertex;
 import junit.framework.TestCase;
 
-import java.util.*;
-
 public class TestDijkstraAlgorithm extends TestCase{
 
 	private List<Vertex> nodes;
@@ -101,7 +99,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 			int duration) {
 		
 		//Twoway RouteEdges
-		routeEdge lane = new RouteEdge(laneId, nodes.get(sourceLocNo),
+		RouteEdge lane = new RouteEdge(laneId, nodes.get(sourceLocNo),
 				nodes.get(destLocNo), duration);
 		routeEdges.add(lane);
 		

@@ -1,4 +1,4 @@
-package com.mahi.interview.baggagerouting;
+package com.mahi.interview.baggagerouting.model;
 
 public class RouteEdge {
 	private final String id;
@@ -10,7 +10,7 @@ public class RouteEdge {
 		this.id = id;
 		this.source = source;
 		this.destination = destination;
-		this.weight = weight;
+		this.baggageweight = weight;
 	}
 
 	public String getId() {
