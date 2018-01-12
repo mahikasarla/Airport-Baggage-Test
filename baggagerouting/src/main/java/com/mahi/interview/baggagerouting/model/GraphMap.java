@@ -1,12 +1,12 @@
-package com.deneverairport.baggagerouting.model;
+package com.mahi.interview.baggagerouting;
 
 import java.util.List;
 
-public class Graph {
+public class GraphMap {
 	private final List<Vertex> vertexes;
 	private final List<Edge> edges;
 
-	public Graph(List<Vertex> vertexes, List<Edge> edges) {
+	public GraphMap(List<Vertex> vertexes, List<Edge> edges) {
 		this.vertexes = vertexes;
 		this.edges = edges;
 	}

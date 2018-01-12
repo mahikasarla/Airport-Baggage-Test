@@ -1,12 +1,12 @@
-package com.deneverairport.baggagerouting.model;
+package com.mahi.interview.baggagerouting;
 
-public class Edge {
+public class RouteEdge {
 	private final String id;
 	private final Vertex source;
 	private final Vertex destination;
 	private final int baggageweight;
 
-	public Edge(String id, Vertex source, Vertex destination, int weight) {
+	public RouteEdge(String id, Vertex source, Vertex destination, int weight) {
 		this.id = id;
 		this.source = source;
 		this.destination = destination;

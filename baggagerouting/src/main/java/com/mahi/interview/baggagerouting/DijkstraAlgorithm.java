@@ -1,4 +1,4 @@
-package com.deneverairport.baggagerouting;
+package com.mahi.interview.baggagerouting;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -9,9 +9,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import com.deneverairport.baggagerouting.model.Edge;
-import com.deneverairport.baggagerouting.model.Graph;
-import com.deneverairport.baggagerouting.model.Vertex;
+import com.mahi.interview.baggagerouting.model.Edge;
+import com.mahi.interview.baggagerouting.model.Graph;
+import com.mahi.interview.baggagerouting.model.Vertex;
 
 
 public class DijkstraAlgorithm {
@@ -24,7 +24,7 @@ public class DijkstraAlgorithm {
 	private Map<Vertex, Integer> distance;
 
 	public DijkstraAlgorithm(Graph graph) {
-		// create a copy of the array so that we can operate on this array
+
 		this.nodes = new ArrayList<Vertex>(graph.getVertexes());
 		this.edges = new ArrayList<Edge>(graph.getEdges());
 	}
@@ -65,7 +65,7 @@ public class DijkstraAlgorithm {
 				return edge.getbaggageweight();
 			}
 		}
-		throw new RuntimeException("Should not happen");
+		throw new DistanceException("There is no end here");
 	}
 
 	private List<Vertex> getNeighbors(Vertex node) {

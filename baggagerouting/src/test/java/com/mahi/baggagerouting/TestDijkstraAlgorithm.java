@@ -1,4 +1,4 @@
-package com.deneverairport.baggagerouting;
+package com.mahi.interview.baggagerouting;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -10,15 +10,15 @@ import java.util.TreeMap;
 
 import junit.framework.TestCase;
 
-import com.deneverairport.baggagerouting.model.Edge;
-import com.deneverairport.baggagerouting.model.Graph;
-import com.deneverairport.baggagerouting.model.Vertex;
+import com.mahi.interview.baggagerouting.model.RouteEdge;
+import com.mahi.interview.baggagerouting.model.GraphMap;
+import com.mahi.interview.baggagerouting.model.Vertex;
 
 public class TestDijkstraAlgorithm extends TestCase{
 
 	private List<Vertex> nodes;
-	private List<Edge> edges;
-	private Graph graph;
+	private List<RouteEdge> routeEdges;
+	private GraphMap graphMap;
 	private DijkstraAlgorithm dijkstra;
 	private Map<String,Vertex[]> bags;
 	private Map<String,Vertex> departures;
@@ -26,7 +26,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 	@Test
 	public void testExcute() {
 		nodes = new ArrayList<Vertex>();
-		edges = new ArrayList<Edge>();
+		routeEdges = new ArrayList<RouteEdge>();
 		
 		//Add Vertexes
 		for (int i = 0; i <= 11; i++) {
@@ -46,23 +46,23 @@ public class TestDijkstraAlgorithm extends TestCase{
 		}
 		
 		
-		//Add Edges
-		addLane("Edge_0", 0, 5, 5);
-		addLane("Edge_1", 5, 11, 5);
-		addLane("Edge_2", 5, 10, 4);
-		addLane("Edge_3", 5, 1, 6);
-		addLane("Edge_4", 1, 2, 1);
-		addLane("Edge_5", 2, 3, 1);
-		addLane("Edge_6", 3, 4, 1);
-		addLane("Edge_7", 10, 9, 1);
-		addLane("Edge_8", 9, 8, 1);
-		addLane("Edge_9", 8, 7, 1);
-		addLane("Edge_10", 7, 6, 1);
+		//Add RouteEdges
+		addLane("RouteEdge_0", 0, 5, 5);
+		addLane("RouteEdge_1", 5, 11, 5);
+		addLane("RouteEdge_2", 5, 10, 4);
+		addLane("RouteEdge_3", 5, 1, 6);
+		addLane("RouteEdge_4", 1, 2, 1);
+		addLane("RouteEdge_5", 2, 3, 1);
+		addLane("RouteEdge_6", 3, 4, 1);
+		addLane("RouteEdge_7", 10, 9, 1);
+		addLane("RouteEdge_8", 9, 8, 1);
+		addLane("RouteEdge_9", 8, 7, 1);
+		addLane("RouteEdge_10", 7, 6, 1);
 		
 
 		// Lets check from location Loc_1 to Loc_10
-		graph = new Graph(nodes, edges);
-		dijkstra = new DijkstraAlgorithm(graph);
+		graphMap = new GraphMap(nodes, routeEdges);
+		dijkstra = new DijkstraAlgorithm(graphMap);
 		
 		departures = new HashMap<>();
 		departures.put("UA11", nodes.get(1));
@@ -107,13 +107,13 @@ public class TestDijkstraAlgorithm extends TestCase{
 	private void addLane(String laneId, int sourceLocNo, int destLocNo,
 			int duration) {
 		
-		//Bidirectional Edges
-		Edge lane = new Edge(laneId, nodes.get(sourceLocNo),
+		//Twoway RouteEdges
+		routeEdge lane = new RouteEdge(laneId, nodes.get(sourceLocNo),
 				nodes.get(destLocNo), duration);
-		edges.add(lane);
+		routeEdges.add(lane);
 		
-		lane = new Edge(laneId, nodes.get(destLocNo),
+		lane = new RouteEdge(laneId, nodes.get(destLocNo),
 				nodes.get(sourceLocNo), duration);
-		edges.add(lane);
+		routeEdges.add(lane);
 	}
 }
