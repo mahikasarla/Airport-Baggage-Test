@@ -2,24 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4b9f63e-4ac3-46bd-aa42-5f3cba7f773e" name="Default" comment="Exception class added">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/DijkstraAlgorithm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/DijkstraGraphMapException.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/Runner.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/model/GraphMap.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/model/RouteEdge.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/model/Vertex.class" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/test-classes/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.project" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/META-INF/maven/com.mahi.interview/baggagerouting/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/META-INF/maven/com.mahi.interview/baggagerouting/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DistanceException.java" afterPath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraGraphMapException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/baggagerouting/TestDijkstraAlgorithm.java" afterPath="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/DijkstraAlgorithm.class" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/DijkstraAlgorithm.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/model/RouteEdge.class" afterPath="$PROJECT_DIR$/baggagerouting/target/classes/com/mahi/interview/baggagerouting/model/RouteEdge.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraAlgorithm.java" afterPath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/GraphMap.java" afterPath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/GraphMap.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java" afterPath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/Vertex.java" afterPath="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/Vertex.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java" afterPath="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -34,89 +23,29 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="DijkstraAlgorithm.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DijkstraAlgorithm.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+            <state relative-caret-position="2562">
+              <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1515789018380" expanded="false" signature="2425:2430" ph=" { " />
-                <marker date="1515789018380" expanded="false" signature="2467:2470" ph=" }" />
+                <marker date="1515790128928" expanded="false" signature="2446:2451" ph=" { " />
+                <marker date="1515790128928" expanded="false" signature="2488:2491" ph=" }" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DijkstraGraphMapException.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraGraphMapException.java">
+      <file leaf-file-name="TestDijkstraAlgorithm.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="42">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <element signature="e#163#164#0" expanded="false" />
-                <element signature="e#193#194#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".classpath" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/.classpath">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/.project">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Runner.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/Runner.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="21">
-              <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RouteEdge.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#571#572#0" expanded="true" />
-                <element signature="e#598#599#0" expanded="true" />
-                <marker date="1515788687677" expanded="false" signature="410:415" ph=" { " />
-                <marker date="1515788687677" expanded="false" signature="425:428" ph=" }" />
-                <marker date="1515788687677" expanded="false" signature="461:466" ph=" { " />
-                <marker date="1515788687677" expanded="false" signature="485:488" ph=" }" />
-                <marker date="1515788687677" expanded="false" signature="516:521" ph=" { " />
-                <marker date="1515788687677" expanded="false" signature="535:538" ph=" }" />
-                <marker date="1515788687677" expanded="false" signature="637:642" ph=" { " />
-                <marker date="1515788687677" expanded="false" signature="676:679" ph=" }" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#2455#2456#0" expanded="true" />
+                <element signature="e#2498#2499#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,13 +54,21 @@
       <file leaf-file-name="GraphMap.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/GraphMap.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+            <state relative-caret-position="378">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RouteEdge.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding>
-                <element signature="e#329#330#0" expanded="true" />
-                <element signature="e#351#352#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#571#572#0" expanded="true" />
+                <element signature="e#598#599#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -142,13 +79,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="490">
               <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-              <folding>
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#247#248#0" expanded="true" />
-                <marker date="1515788698786" expanded="false" signature="274:279" ph=" { " />
-                <marker date="1515788698786" expanded="false" signature="291:294" ph=" }" />
-                <marker date="1515788698786" expanded="false" signature="849:852" ph=" }" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,11 +91,11 @@
       <find>getweight</find>
       <find>graph</find>
       <find>RouteEdge</find>
-      <find>dene</find>
       <find>deneverairport</find>
       <find>Edge</find>
       <find>routeEdges</find>
       <find>Graph</find>
+      <find>dene</find>
     </findStrings>
     <replaceStrings>
       <replace>mahi</replace>
@@ -197,14 +128,15 @@
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/baggagerouting/model/Vertex.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/baggagerouting/DistanceException.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/baggagerouting/DijkstraAlgorithm.java" />
-        <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/Vertex.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DistanceException.java" />
         <option value="$PROJECT_DIR$/baggagerouting/pom.xml" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/Runner.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/baggagerouting/TestDijkstraAlgorithm.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/GraphMap.java" />
+        <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java" />
         <option value="$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraAlgorithm.java" />
+        <option value="$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java" />
       </list>
     </option>
   </component>
@@ -250,7 +182,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Airport-baggage-routing-problem-using-Dijkstra-s-Algorithm-master" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="create.test.in.the.same.root" value="true" />
   </component>
   <component name="RecentsManager">
@@ -764,6 +696,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="0" width="1924" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -774,23 +707,23 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6693092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32842582" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2608225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2608225" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="MaxCompute Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -826,8 +759,8 @@
           <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515789018380" expanded="false" signature="2425:2430" ph=" { " />
-            <marker date="1515789018380" expanded="false" signature="2467:2470" ph=" }" />
+            <marker date="1515790128928" expanded="false" signature="2446:2451" ph=" { " />
+            <marker date="1515790128928" expanded="false" signature="2488:2491" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -894,8 +827,8 @@
           <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515789018380" expanded="false" signature="2425:2430" ph=" { " />
-            <marker date="1515789018380" expanded="false" signature="2467:2470" ph=" }" />
+            <marker date="1515790128928" expanded="false" signature="2446:2451" ph=" { " />
+            <marker date="1515790128928" expanded="false" signature="2488:2491" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -954,8 +887,8 @@
           <caret line="64" column="31" lean-forward="false" selection-start-line="64" selection-start-column="31" selection-end-line="64" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515789018380" expanded="false" signature="2425:2430" ph=" { " />
-            <marker date="1515789018380" expanded="false" signature="2467:2470" ph=" }" />
+            <marker date="1515790128928" expanded="false" signature="2446:2451" ph=" { " />
+            <marker date="1515790128928" expanded="false" signature="2488:2491" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1049,34 +982,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baggagerouting/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baggagerouting/.classpath">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/baggagerouting/.project">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1101,41 +1010,49 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#163#164#0" expanded="false" />
-            <element signature="e#193#194#0" expanded="false" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baggagerouting/.classpath">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baggagerouting/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="29" lean-forward="false" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/GraphMap.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#329#330#0" expanded="true" />
-            <element signature="e#351#352#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-            <element signature="e#408#409#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="378">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/model/RouteEdge.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="126">
+          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding>
             <element signature="e#571#572#0" expanded="true" />
             <element signature="e#598#599#0" expanded="true" />
-            <marker date="1515788687677" expanded="false" signature="410:415" ph=" { " />
-            <marker date="1515788687677" expanded="false" signature="425:428" ph=" }" />
-            <marker date="1515788687677" expanded="false" signature="461:466" ph=" { " />
-            <marker date="1515788687677" expanded="false" signature="485:488" ph=" }" />
-            <marker date="1515788687677" expanded="false" signature="516:521" ph=" { " />
-            <marker date="1515788687677" expanded="false" signature="535:538" ph=" }" />
-            <marker date="1515788687677" expanded="false" signature="637:642" ph=" { " />
-            <marker date="1515788687677" expanded="false" signature="676:679" ph=" }" />
           </folding>
         </state>
       </provider>
@@ -1144,24 +1061,30 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="490">
           <caret line="49" column="1" lean-forward="true" selection-start-line="49" selection-start-column="1" selection-end-line="49" selection-end-column="1" />
-          <folding>
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#247#248#0" expanded="true" />
-            <marker date="1515788698786" expanded="false" signature="274:279" ph=" { " />
-            <marker date="1515788698786" expanded="false" signature="291:294" ph=" }" />
-            <marker date="1515788698786" expanded="false" signature="849:852" ph=" }" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baggagerouting/src/main/java/com/mahi/interview/baggagerouting/DijkstraAlgorithm.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="37" lean-forward="true" selection-start-line="11" selection-start-column="37" selection-end-line="11" selection-end-column="37" />
+        <state relative-caret-position="2562">
+          <caret line="124" column="0" lean-forward="false" selection-start-line="124" selection-start-column="0" selection-end-line="124" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1515789018380" expanded="false" signature="2425:2430" ph=" { " />
-            <marker date="1515789018380" expanded="false" signature="2467:2470" ph=" }" />
+            <marker date="1515790128928" expanded="false" signature="2446:2451" ph=" { " />
+            <marker date="1515790128928" expanded="false" signature="2488:2491" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/baggagerouting/src/test/java/com/mahi/interview/baggagerouting/TestDijkstraAlgorithm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2455#2456#0" expanded="true" />
+            <element signature="e#2498#2499#0" expanded="true" />
           </folding>
         </state>
       </provider>

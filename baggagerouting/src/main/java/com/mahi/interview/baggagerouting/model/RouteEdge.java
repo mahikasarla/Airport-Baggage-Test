@@ -25,7 +25,7 @@ public class RouteEdge {
 		return source;
 	}
 
-	public int getbaggageweight() {
+	public int getBaggageweight() {
 		return baggageweight;
 	}
 

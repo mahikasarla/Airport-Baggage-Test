@@ -1,5 +1,7 @@
 package com.mahi.interview.baggagerouting;
 
+import java.util.*;
+
 import com.mahi.interview.baggagerouting.model.GraphMap;
 import com.mahi.interview.baggagerouting.model.RouteEdge;
 import com.mahi.interview.baggagerouting.model.Vertex;
@@ -53,7 +55,7 @@ public class DijkstraAlgorithm {
 		for (RouteEdge edge : edges) {
 			if (edge.getSource().equals(node)
 					&& edge.getDestination().equals(target)) {
-				return edge.getbaggageweight();
+				return edge.getBaggageweight();
 			}
 		}
 		throw new DijkstraGraphMapException("There is no end here");

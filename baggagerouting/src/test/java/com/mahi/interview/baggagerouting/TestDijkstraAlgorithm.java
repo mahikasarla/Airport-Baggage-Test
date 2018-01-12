@@ -1,110 +1,124 @@
 package com.mahi.interview.baggagerouting;
 
+import java.util.*;
+
 import com.mahi.interview.baggagerouting.model.GraphMap;
 import com.mahi.interview.baggagerouting.model.RouteEdge;
 import com.mahi.interview.baggagerouting.model.Vertex;
-import junit.framework.TestCase;
-
-public class TestDijkstraAlgorithm extends TestCase{
-
-	private List<Vertex> nodes;
-	private List<RouteEdge> routeEdges;
-	private GraphMap graphMap;
-	private DijkstraAlgorithm dijkstra;
-	private Map<String,Vertex[]> bags;
-	private Map<String,Vertex> departures;
 
 
-	public void testExcute() {
-		nodes = new ArrayList<Vertex>();
-		routeEdges = new ArrayList<RouteEdge>();
-		
-		//Add Vertexes
-		for (int i = 0; i <= 11; i++) {
-			if (i==0) {
-				Vertex location = new Vertex("Concourse_A_Ticketing", "Concourse_A_Ticketing");
-				nodes.add(location);
-			}else{
-			if (i==11) {
-				Vertex location = new Vertex("BaggageClaim", "BaggageClaim");
-				nodes.add(location);
-			}
-			else{
-			Vertex location = new Vertex("A" + i, "A" + i);
-			nodes.add(location);
-			}
-			}
+public class TestDijkstraAlgorithm {
+
+	private final List<Vertex> nodes;
+	private final List<RouteEdge> edges;
+	private Set<Vertex> settledNodes;
+	private Set<Vertex> unSettledNodes;
+	private Map<Vertex, Vertex> predecessors;
+	private Map<Vertex, Integer> distance;
+
+	public TestDijkstraAlgorithm(GraphMap graph) {
+
+		this.nodes = new ArrayList<Vertex>(graph.getVertexes());
+		this.edges = new ArrayList<RouteEdge>(graph.getEdges());
+	}
+
+	public void execute(Vertex source) {
+		settledNodes = new HashSet<Vertex>();
+		unSettledNodes = new HashSet<Vertex>();
+		distance = new HashMap<Vertex, Integer>();
+		predecessors = new HashMap<Vertex, Vertex>();
+		distance.put(source, 0);
+		unSettledNodes.add(source);
+		while (unSettledNodes.size() > 0) {
+			Vertex node = getMinimum(unSettledNodes);
+			settledNodes.add(node);
+			unSettledNodes.remove(node);
+			findMinimalDistances(node);
 		}
-		
-		
-		//Add RouteEdges
-		addLane("RouteEdge_0", 0, 5, 5);
-		addLane("RouteEdge_1", 5, 11, 5);
-		addLane("RouteEdge_2", 5, 10, 4);
-		addLane("RouteEdge_3", 5, 1, 6);
-		addLane("RouteEdge_4", 1, 2, 1);
-		addLane("RouteEdge_5", 2, 3, 1);
-		addLane("RouteEdge_6", 3, 4, 1);
-		addLane("RouteEdge_7", 10, 9, 1);
-		addLane("RouteEdge_8", 9, 8, 1);
-		addLane("RouteEdge_9", 8, 7, 1);
-		addLane("RouteEdge_10", 7, 6, 1);
-		
+	}
 
-		// Lets check from location Loc_1 to Loc_10
-		graphMap = new GraphMap(nodes, routeEdges);
-		dijkstra = new DijkstraAlgorithm(graphMap);
-		
-		departures = new HashMap<>();
-		departures.put("UA11", nodes.get(1));
-		departures.put("UA12", nodes.get(1));
-		departures.put("UA13", nodes.get(2));
-		departures.put("UA14", nodes.get(2));
-		departures.put("UA10", nodes.get(1));
-		departures.put("UA15", nodes.get(2));
-		departures.put("UA16", nodes.get(3));
-		departures.put("UA17", nodes.get(4));
-		departures.put("UA18", nodes.get(5));
-		departures.put("ARRIVAL", nodes.get(11));
-		
-		bags = new LinkedHashMap<>();
-		bags.put("0001", new Vertex[]{nodes.get(0), departures.get("UA12")} );
-		bags.put("0002", new Vertex[]{nodes.get(5), departures.get("UA17")} );
-		bags.put("0003", new Vertex[]{nodes.get(2), departures.get("UA10")} );
-		bags.put("0004", new Vertex[]{nodes.get(8), departures.get("UA18")} );
-		bags.put("0005", new Vertex[]{nodes.get(7), departures.get("ARRIVAL")} );
-		
-		for (Map.Entry<String,Vertex[]> bag : bags.entrySet()) {
-			getPathDistance(bag);
+	private void findMinimalDistances(Vertex node) {
+		List<Vertex> adjacentNodes = getNeighbors(node);
+		for (Vertex target : adjacentNodes) {
+			if (getShortestDistance(target) > getShortestDistance(node)
+					+ getDistance(node, target)) {
+				distance.put(target,
+						getShortestDistance(node) + getDistance(node, target));
+				predecessors.put(target, node);
+				unSettledNodes.add(target);
+			}
 		}
 
 	}
 
+	private int getDistance(Vertex node, Vertex target) {
+		for (RouteEdge edge : edges) {
+			if (edge.getSource().equals(node)
+					&& edge.getDestination().equals(target)) {
+				return edge.getBaggageweight();
+			}
+		}
+		throw new DijkstraGraphMapException("There is no end here");
+	}
 
-	private void getPathDistance(Map.Entry<String,Vertex[]> bag) {
-		String bagName=bag.getKey();
-		Vertex[] vertexes=bag.getValue();
-		dijkstra.execute(vertexes[0]);
-		Map<Integer,LinkedList<Vertex>> path = dijkstra.getPath(vertexes[1]);
+	private List<Vertex> getNeighbors(Vertex node) {
+		List<Vertex> neighbors = new ArrayList<Vertex>();
+		for (RouteEdge edge : edges) {
+			if (edge.getSource().equals(node)
+					&& !isSettled(edge.getDestination())) {
+				neighbors.add(edge.getDestination());
+			}
+		}
+		return neighbors;
+	}
 
-		assertNotNull(path);
-		assertTrue(path.size() > 0);
+	private Vertex getMinimum(Set<Vertex> vertexes) {
+		Vertex minimum = null;
+		for (Vertex vertex : vertexes) {
+			if (minimum == null) {
+				minimum = vertex;
+			} else {
+				if (getShortestDistance(vertex) < getShortestDistance(minimum)) {
+					minimum = vertex;
+				}
+			}
+		}
+		return minimum;
+	}
 
-		for (Map.Entry<Integer,LinkedList<Vertex>> pathDistance : path.entrySet()) {
-			System.out.println(bagName+"\t"+pathDistance.getValue().toString()+"\t"+pathDistance.getKey());
+	private boolean isSettled(Vertex vertex) {
+		return settledNodes.contains(vertex);
+	}
+
+	private int getShortestDistance(Vertex destination) {
+		Integer d = distance.get(destination);
+		if (d == null) {
+			return Integer.MAX_VALUE;
+		} else {
+			return d;
 		}
 	}
 
-	private void addLane(String laneId, int sourceLocNo, int destLocNo,
-			int duration) {
-		
-		//Twoway RouteEdges
-		RouteEdge lane = new RouteEdge(laneId, nodes.get(sourceLocNo),
-				nodes.get(destLocNo), duration);
-		routeEdges.add(lane);
-		
-		lane = new RouteEdge(laneId, nodes.get(destLocNo),
-				nodes.get(sourceLocNo), duration);
-		routeEdges.add(lane);
+
+	public Map<Integer,LinkedList<Vertex>> getPath(Vertex target) {
+		LinkedList<Vertex> path = new LinkedList<Vertex>();
+		Vertex step = target;
+		int totalSum=0;
+		// check if a path exists
+		if (predecessors.get(step) == null) {
+			return null;
+		}
+		path.add(step);
+		while (predecessors.get(step) != null) {
+			totalSum+=getDistance(step, predecessors.get(step));
+			step = predecessors.get(step);
+			path.add(step);
+		}
+		// Put it into the correct order
+		Collections.reverse(path);
+		Map<Integer,LinkedList<Vertex>> map = new HashMap<>();
+		map.put(Integer.valueOf(totalSum), path);
+		return map;
 	}
+
 }
