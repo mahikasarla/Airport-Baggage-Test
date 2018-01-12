@@ -1,18 +1,11 @@
 package com.mahi.interview.baggagerouting;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.TreeMap;
-
+import com.mahi.interview.baggagerouting.model.GraphMap;
+import com.mahi.interview.baggagerouting.model.RouteEdge;
+import com.mahi.interview.baggagerouting.model.Vertex;
 import junit.framework.TestCase;
 
-import com.mahi.interview.baggagerouting.model.RouteEdge;
-import com.mahi.interview.baggagerouting.model.GraphMap;
-import com.mahi.interview.baggagerouting.model.Vertex;
+import java.util.*;
 
 public class TestDijkstraAlgorithm extends TestCase{
 
@@ -23,7 +16,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 	private Map<String,Vertex[]> bags;
 	private Map<String,Vertex> departures;
 
-	@Test
+
 	public void testExcute() {
 		nodes = new ArrayList<Vertex>();
 		routeEdges = new ArrayList<RouteEdge>();
@@ -89,7 +82,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 
 	}
 
-	@Test
+
 	private void getPathDistance(Map.Entry<String,Vertex[]> bag) {
 		String bagName=bag.getKey();
 		Vertex[] vertexes=bag.getValue();
@@ -103,7 +96,7 @@ public class TestDijkstraAlgorithm extends TestCase{
 			System.out.println(bagName+"\t"+pathDistance.getValue().toString()+"\t"+pathDistance.getKey());
 		}
 	}
-     @Test
+
 	private void addLane(String laneId, int sourceLocNo, int destLocNo,
 			int duration) {
 		
